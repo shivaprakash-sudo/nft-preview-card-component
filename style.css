@@ -1,3 +1,29 @@
+/* Outfit font from google */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    /* primary colours */
+    --clr-primary: hsl(215, 51%, 70%);
+    --clr-secondary: hsl(178, 100%, 50%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(215, 32%, 27%);
+    --clr-neutral-300: hsl(216, 50%, 16%);
+    --clr-neutral-400: hsl(217, 54%, 11%);
+
+    /* font styles */
+    --ff-base: 'Outfit', sans-serif;
+    --fs-base: 1.125rem;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* attribution */
 .attribution {
     font-size: 11px;
