@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://your-solution-url.com)
-- Live Site URL: [NFT preview card component](https://your-live-site-url.com)
+- Solution URL: [GitHub repo](https://github.com/shivaprakash-sudo/nft-preview-card-component)
+- Live Site URL: [NFT preview card component](https://shivaprakash-sudo.github.io/nft-preview-card-component)
 
 ## My process
 
