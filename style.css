@@ -30,6 +30,11 @@
 
 img {
     max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.4;
 }
 
 hr {
@@ -122,6 +127,34 @@ body {
 .card__img {
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.card__img,
+.card__img::before {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.card__img::before {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-secondary);
+    inset: 0;
+    transform: translateX(100%);
+    transition: 300ms;
+    opacity: 50%;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+.card__img:hover::before {
+    transform: translateX(0);
 }
 
 .card__img-hover {
@@ -134,15 +167,6 @@ body {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-}
-
-.card__img-border {
-    overflow: hidden;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
 }
 
 .card__img:hover .card__img-hover {
