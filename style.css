@@ -30,7 +30,7 @@
 
 img {
     max-width: 100%;
-    height: auto;
+    display: block;
 }
 
 p {
@@ -44,6 +44,10 @@ hr {
 body {
     font-family: var(--ff-base);
     font-size: var(--fs-base);
+}
+
+main a {
+    text-decoration: none;
 }
 
 /* utility classes */
@@ -112,7 +116,7 @@ body {
 }
 
 .card {
-    width: min(95%, 20rem);
+    width: min(95%, 22rem);
     padding: 1.3rem;
     margin-inline: auto;
     background-color: var(--clr-neutral-300);
@@ -146,7 +150,7 @@ body {
     inset: 0;
     transform: translateX(100%);
     transition: 300ms;
-    opacity: 50%;
+    opacity: 40%;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -ms-transition: 300ms;
@@ -173,6 +177,10 @@ body {
     display: block;
 }
 
+.card__heading {
+    font-size: calc(var(--fs-base) * 1.2);
+}
+
 .avatar {
     width: 2rem;
     height: 2rem;
@@ -189,4 +197,10 @@ body {
     margin-block-start: 1rem;
     font-size: 0.6875rem;
     text-align: center;
+}
+
+@media (min-width:600px) {
+    :root {
+        --fs-base: 1.125rem;
+    }
 }

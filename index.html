@@ -12,16 +12,16 @@
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 
-<body>
-  <main class="container flex col items-center">
+<body class="container flex col items-center">
+  <main>
     <article class="card flex col gap-1">
-      <div class="card__img transition-smooth">
+      <a href="#" class="card__img transition-smooth">
         <img class="card__img-border" src="./images/image-equilibrium.jpg" alt="Equilibrium">
         <div class="card__img-hover">
           <img class="card__img-border" src="./images/icon-view.svg" alt="Eye icon">
         </div>
-      </div>
-      <h3 class="text-white text-bold hover-text-secondary transition-smooth ">Equilibrium #3429</h3>
+      </a>
+      <a class="card__heading text-white text-bold hover-text-secondary transition-smooth ">Equilibrium #3429</a>
       <p class="text-light">Our Equilibrium collection promotes balance and calm.</p>
       <div class="flex justify-between items-center">
         <div class="flex gap-sm items-center">
@@ -35,19 +35,19 @@
       </div>
       <hr>
       <div class="flex gap-1 items-center">
-        <img class="avatar" src="./images/image-avatar.png" alt="Avatar">
-        <p class="text-sm"><span class="text-light">Creation of</span> <span
-            class="text-white hover-text-secondary transition-smooth">Jules Wyvern</span></p>
+        <img class="avatar" src="./images/image-avatar.png" alt="Jules Wyvern">
+        <p class="text-sm"><span class="text-light">Creation of</span> <a href="#"
+            class="text-white hover-text-secondary transition-smooth">Jules Wyvern</a></p>
       </div>
     </article>
-    <div class="attribution text-light">
-      Challenge by <a class="text-secondary" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
-        Mentor</a>.
-      Coded by <a class="text-secondary" href="https://www.frontendmentor.io/profile/shivaprakash-sudo"
-        target="_blank">Shiva Prakash
-        Pendem</a>.
-    </div>
   </main>
+  <footer class="attribution text-light">
+    Challenge by <a class="text-secondary" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a class="text-secondary" href="https://www.frontendmentor.io/profile/shivaprakash-sudo"
+      target="_blank">Shiva Prakash
+      Pendem</a>.
+  </footer>
 </body>
 
 </html>
